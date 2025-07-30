@@ -89,7 +89,7 @@ function App() {
         transition={{ type: 'spring', stiffness: 100, damping: 20 }}
         className="w-72 bg-white dark:bg-slate-800 border-r border-gray-300 dark:border-slate-700 p-4 flex flex-col"
       >
-        <h2 className="text-2xl font-bold mb-6">🧾 To-Do List</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center">🧾 To-Do List</h2>
         <nav className="flex flex-col gap-3">
           {[
             { label: 'Todas', value: 'all', icon: ClipboardIcon },
@@ -173,10 +173,20 @@ function App() {
           <p>Pendientes: {pendingCount}</p>
         </div>
 
+         <div className="flex justify-center p-5">
+          <img
+            src="/logo_om.png" // ⚠️ Cambiá esto por la ruta correcta de tu logo
+            alt="Logo"
+            className="h-10 w-auto"
+          />
+        </div>
+
         <div className="mt-auto">
           <ThemeToggle />
         </div>
       </motion.aside>
+
+      
 
     <main className="flex-1 p-7 overflow-auto flex flex-col items-center">
   <div className="w-full max-w-2xl p-5">
